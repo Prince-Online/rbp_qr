@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', function () {
             amountValue.textContent = amount;
             amountDisplay.style.display = 'block';
             document.getElementById('diwaliIcons').style.display = 'none';
-            qrValue = `upi://pay?pa=${upiId}&am=${amount}&pn=Rahul Book Point&cu=INR`;
+            qrValue = `upi://pay?pa=${upiId}&am=${amount}&pn=Rahul%20Book%20Point&cu=INR`;
         } else {
             amountDisplay.style.display = 'none';
             document.getElementById('diwaliIcons').style.display = 'flex';
-            qrValue = `upi://pay?pa=${upiId}&pn=Rahul Book Point&cu=INR`;
+            qrValue = `upi://pay?pa=${upiId}&pn=Rahul%20Book%20Point&cu=INR`;
             createDiwaliIcons();
         }
 
@@ -80,4 +80,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
         diwaliContainer.innerHTML = diyaSvg + firecracker + flower;
     }
+
 });
