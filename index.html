@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<div class="diwali-light light-1"></div>
+<div class="diwali-light light-2"></div>
+<div class="diwali-light light-3"></div>
+<div class="diwali-light light-4"></div>
+
+<div class="container">
+    <h1>Happy Diwali</h1>
+    <div class="subtitle">🪔 Festival of Lights 🪔</div>
+    <div class="store-name">Rahul Book Point</div>
+
+    <div class="input-group">
+        <label for="amountInput">Amount (₹) - Optional</label>
+        <input type="number" id="amountInput" placeholder="Enter amount or leave blank" min="1">
+    </div>
+
+    <button id="generateBtn">Generate QR Code</button>
+
+    <div id="qrCodeContainer">
+        <div id="qrWrapper">
+            <div class="diya diya-1"></div>
+            <div class="diya diya-2"></div>
+            <div class="diya diya-3"></div>
+            <div class="diya diya-4"></div>
+            <img crossOrigin="anonymous" src="https://i.ibb.co/svwCcp16/icon.png" alt="Logo" class="logo">
+            <div class="qr-title">Happy Diwali</div>
+            <div class="qr-store">Rahul Book Point</div>
+            <div id="qrCode"></div>
+            <div class="amount-display" id="amountDisplay" style="display: none;">Amount: ₹<span
+                    id="amountValue">0</span></div>
+            <div id="diwaliIcons" class="diwali-icons" style="display: none;"></div>
+            <div class="upi-id">UPI: createprincemahto-2@okaxis</div>
+        </div>
+        <button id="downloadBtn" class="download-btn">Download QR Code</button>
+    </div>
+</div>
