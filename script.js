@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const amountDisplay = document.getElementById('amountDisplay');
     const amountValue = document.getElementById('amountValue');
     const qrCode = document.getElementById('qrCode');
-    const upiId = "createprincemahto-2@okaxis";
+    const upiId = "q470129537@ybl";
 
     generateBtn.addEventListener('click', function () {
         const amount = amountInput.value;
@@ -82,3 +82,4 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 });
+
